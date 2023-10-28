@@ -56,6 +56,10 @@ bool validateInput(T str1, U str2) {
       cout << "Invalid input, string contains  %, $, @" << endl;
       return false;
     }
+    if(validString1.length() >= 10 || validString2.length() >= 10){
+      cout << "Invalid. Input is above 10 characters."<< endl;
+      return false;
+    }
   }
   return true;
 }
